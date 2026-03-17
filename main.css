@@ -164,7 +164,7 @@ a.theme-link {
 }
 
 ul.resume-list {
-  @apply pl-5 list-disc;
+  @apply pl-7 list-disc;
 }
 .project-link {
   @apply text-[var(--gray-400)] transition-colors duration-200 hover:text-[var(--theme-color-primary)];

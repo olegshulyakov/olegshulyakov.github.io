@@ -823,7 +823,7 @@ a.theme-link:hover {
 
 ul.resume-list {
   list-style-type: disc;
-  padding-left: 1.25rem;
+  padding-left: 1.75rem;
 }
 .project-link {
   color: var(--gray-400);
