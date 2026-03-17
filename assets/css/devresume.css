@@ -1,3 +1,11 @@
+/*!
+ * Template Name: DevResume - TailwindCSS Resume/CV Template for Software Developers
+ * Version: TailwindCSS v3.4.19
+ * Author: Xiaoying Riley
+ * Copyright: 3rd Wave Media Ltd.
+ * Twitter: @3rdwave_themes
+ * Website: http://themes.3rdwavemedia.com/
+*/
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -51,7 +59,6 @@
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-
 ::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -104,13 +111,13 @@
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
-}/*
-! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
-*//*
+}
+/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+*/
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-
 *,
 ::before,
 ::after {
@@ -119,12 +126,10 @@
   border-style: solid; /* 2 */
   border-color: #e5e7eb; /* 2 */
 }
-
 ::before,
 ::after {
   --tw-content: '';
 }
-
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -134,7 +139,6 @@
 6. Use the user's configured `sans` font-variation-settings by default.
 7. Disable tap highlights on iOS
 */
-
 html,
 :host {
   line-height: 1.5; /* 1 */
@@ -147,42 +151,34 @@ html,
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
 }
-
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
-
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
-
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
-
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
   border-top-width: 1px; /* 3 */
 }
-
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
-
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
-
 /*
 Remove the default font size and weight for headings.
 */
-
 h1,
 h2,
 h3,
@@ -192,32 +188,26 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
-
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
-
 a {
   color: inherit;
   text-decoration: inherit;
 }
-
 /*
 Add the correct font weight in Edge and Safari.
 */
-
 b,
 strong {
   font-weight: bolder;
 }
-
 /*
 1. Use the user's configured `mono` font-family by default.
 2. Use the user's configured `mono` font-feature-settings by default.
 3. Use the user's configured `mono` font-variation-settings by default.
 4. Correct the odd `em` font sizing in all browsers.
 */
-
 code,
 kbd,
 samp,
@@ -227,19 +217,15 @@ pre {
   font-variation-settings: normal; /* 3 */
   font-size: 1em; /* 4 */
 }
-
 /*
 Add the correct font size in all browsers.
 */
-
 small {
   font-size: 80%;
 }
-
 /*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
-
 sub,
 sup {
   font-size: 75%;
@@ -247,33 +233,27 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
-
 /*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 3. Remove gaps between table borders by default.
 */
-
 table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
   border-collapse: collapse; /* 3 */
 }
-
 /*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
 */
-
 button,
 input,
 optgroup,
@@ -290,21 +270,17 @@ textarea {
   margin: 0; /* 2 */
   padding: 0; /* 3 */
 }
-
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
-
 button,
 select {
   text-transform: none;
 }
-
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
-
 button,
 input:where([type='button']),
 input:where([type='reset']),
@@ -313,80 +289,62 @@ input:where([type='submit']) {
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
 }
-
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
-
 :-moz-focusring {
   outline: auto;
 }
-
 /*
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
-
 :-moz-ui-invalid {
   box-shadow: none;
 }
-
 /*
 Add the correct vertical alignment in Chrome and Firefox.
 */
-
 progress {
   vertical-align: baseline;
 }
-
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
-
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
-
 /*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-
 [type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
-
 /*
 Remove the inner padding in Chrome and Safari on macOS.
 */
-
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to `inherit` in Safari.
 */
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
-
 /*
 Add the correct display in Chrome and Safari.
 */
-
 summary {
   display: list-item;
 }
-
 /*
 Removes the default spacing and border for appropriate elements.
 */
-
 blockquote,
 dl,
 dd,
@@ -402,16 +360,13 @@ p,
 pre {
   margin: 0;
 }
-
 fieldset {
   margin: 0;
   padding: 0;
 }
-
 legend {
   padding: 0;
 }
-
 ol,
 ul,
 menu {
@@ -419,60 +374,49 @@ menu {
   margin: 0;
   padding: 0;
 }
-
 /*
 Reset default styling for dialogs.
 */
 dialog {
   padding: 0;
 }
-
 /*
 Prevent resizing textareas horizontally by default.
 */
-
 textarea {
   resize: vertical;
 }
-
 /*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
-
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
-
 /*
 Set the default cursor for buttons.
 */
-
 button,
 [role="button"] {
   cursor: pointer;
 }
-
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
 :disabled {
   cursor: default;
 }
-
 /*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
-
 img,
 svg,
 video,
@@ -484,17 +428,14 @@ object {
   display: block; /* 1 */
   vertical-align: middle; /* 2 */
 }
-
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
-
 img,
 video {
   max-width: 100%;
   height: auto;
 }
-
 /* Make elements with the HTML hidden attribute stay hidden by default */
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
@@ -507,14 +448,6 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
-/*!
- * Template Name: DevResume - Bootstrap 5 Resume/CV Template for Software Developers
- * Version: Bootstrap 5 v3.1
- * Author: Xiaoying Riley
- * Copyright: 3rd Wave Media Ltd.
- * Twitter: @3rdwave_themes
- * Website: http://themes.3rdwavemedia.com/
-*/
 :root {
   /*************************** Theme Colours****************************/
   /* Define theme colour scheme */
@@ -555,9 +488,13 @@ video {
 
 /*********** Theme Generic **********/
 body {
+  background-color: var(--theme-bg-body);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Roboto',sans-serif;
+  color: var(--theme-text-color-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--theme-text-color-secondary);
 }
 
 h1,
@@ -566,56 +503,54 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 700;
   color: var(--theme-text-color-primary);
-  font-weight: bold;
-}
-
-/* Extracted from index.html */
-body {
-  background-color: var(--theme-bg-body);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-family: "Roboto", sans-serif;
 }
 
 .main-wrapper {
-  max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
+  max-width: 80rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 @media (min-width: 1024px) {
   .main-wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
+
 /*********** Resume **********/
 .resume-wrapper {
-  border: 1px solid var(--theme-resume-border);
+  margin-bottom: 3rem;
+  border-width: 1px;
+  border-color: var(--theme-resume-border);
   background-color: var(--theme-bg-resume);
   padding: 2rem;
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  margin-bottom: 3rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .resume-header {
+  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid var(--theme-border-color-light);
+  border-bottom-width: 1px;
+  border-color: var(--theme-border-color-light);
   padding-bottom: 1.5rem;
-  margin-bottom: 1.5rem;
 }
+
 @media (min-width: 768px) {
   .resume-header {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
 @media (min-width: 1024px) {
   .resume-header {
     gap: 3rem;
@@ -623,51 +558,56 @@ body {
 }
 
 .resume-title {
-  grid-column: span 2;
-  text-align: center;
+  grid-column: span 2 / span 2;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
+
 @media (min-width: 768px) {
   .resume-title {
+    margin-bottom: 0px;
     text-align: left;
-    margin-bottom: 0;
   }
 }
 
 .resume-name {
+  margin-bottom: 0px;
   font-size: 2.75rem;
   font-weight: 900;
+  text-transform: uppercase;
   letter-spacing: 0.4rem;
   color: var(--theme-color-primary);
-  margin-bottom: 0;
-  text-transform: uppercase;
 }
 
 .resume-tagline {
-  font-size: 1.25rem;
-  font-weight: 300;
   margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 300;
 }
+
 @media (min-width: 768px) {
   .resume-tagline {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 }
 
 .resume-contact {
-  border-left: 1px solid var(--theme-divider-border);
-  font-size: 0.75rem;
   width: 100%;
+  border-left-width: 0px;
+  border-color: var(--theme-divider-border);
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   .resume-contact {
-    border-left: 0;
+    border-left-width: 1px;
   }
 }
+
 @media (min-width: 1024px) {
   .resume-contact {
     padding-left: 1.5rem;
@@ -676,19 +616,20 @@ body {
 }
 
 .resume-contact ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
   font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .resume-contact li {
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.5rem;
 }
 .resume-contact li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .resume-contact li {
@@ -697,16 +638,18 @@ body {
 }
 .resume-contact i,
 .resume-contact svg {
-  width: 1rem;
-  height: 1rem;
   margin-right: 0.75rem;
+  height: 1rem;
+  width: 1rem;
   color: var(--secondary);
 }
 
 a.resume-link {
   color: var(--theme-text-color-secondary);
-  text-decoration: underline;
-  transition: color 0.2s;
+  text-decoration-line: underline;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
 
 a.resume-link:hover {
@@ -714,14 +657,16 @@ a.resume-link:hover {
 }
 
 .resume-intro-wrapper {
+  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  border-bottom: 1px solid var(--theme-border-color-light);
+  border-bottom-width: 1px;
+  border-color: var(--theme-border-color-light);
   padding-bottom: 1.5rem;
-  margin-bottom: 1.5rem;
 }
+
 @media (min-width: 768px) {
   .resume-intro-wrapper {
     flex-direction: row;
@@ -729,24 +674,26 @@ a.resume-link:hover {
 }
 
 .resume-profile-image {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 120px;
+  flex-shrink: 0;
   border-radius: 0.25rem;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow:
-    0 1px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  margin-left: auto;
-  margin-right: auto;
-  flex-shrink: 0;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .resume-intro {
-  font-size: 0.875rem;
   text-align: center;
-  color: var(--theme-text-color-alt);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   line-height: 1.625;
+  color: var(--theme-text-color-alt);
 }
+
 @media (min-width: 768px) {
   .resume-intro {
     text-align: left;
@@ -755,7 +702,7 @@ a.resume-link:hover {
 
 a.theme-link {
   color: var(--theme-text-color-primary);
-  text-decoration: underline;
+  text-decoration-line: underline;
   text-decoration-color: var(--theme-link-decoration);
 }
 
@@ -769,6 +716,7 @@ a.theme-link:hover {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 2rem;
 }
+
 @media (min-width: 1024px) {
   .resume-body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -781,37 +729,41 @@ a.theme-link:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-right: 0;
+  padding-right: 0px;
 }
 @media (min-width: 1024px) {
   .resume-main {
-    grid-column: span 2;
+    grid-column: span 2 / span 2;
     padding-right: 1rem;
   }
 }
 
 .resume-main .item-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--secondary);
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
 }
 
 .resume-main .item-meta {
-  font-size: 0.75rem;
-  color: var(--gray-700);
   margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--gray-700);
 }
+
 @media (min-width: 768px) {
   .resume-main .item-meta {
-    margin-top: 0;
+    margin-top: 0px;
   }
 }
 
 .resume-main .item-content {
   font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .resume-main .item-content p {
   margin-bottom: 0.75rem;
@@ -826,33 +778,36 @@ a.theme-link:hover {
 
 .resume-section-heading {
   position: relative;
-  padding-left: 1rem;
-  font-size: 1.125rem;
-  letter-spacing: 0.15rem;
-  font-weight: 700;
-  color: var(--theme-color-primary);
-  text-transform: uppercase;
   margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: var(--theme-color-primary);
 }
 
 .resume-section-heading::before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 100%;
-  background: var(--theme-color-primary);
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  height: 100%;
+  width: 5px;
+  background-color: var(--theme-color-primary);
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .item-heading {
+  margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
 }
+
 @media (min-width: 768px) {
   .item-heading {
     flex-direction: row;
@@ -862,55 +817,56 @@ a.theme-link:hover {
 }
 
 ul.resume-list {
-  padding-left: 1.25rem;
   list-style-type: disc;
+  padding-left: 1.25rem;
 }
 .project-link {
   color: var(--gray-400);
-  transition: color 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
 .project-link:hover {
   color: var(--theme-color-primary);
 }
 
 .external-link-icon {
-  width: 1rem;
   height: 1rem;
+  width: 1rem;
 }
 
 .resume-aside {
-  border-left: 1px solid var(--theme-divider-border);
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  border-left-width: 0px;
+  border-color: var(--theme-divider-border);
 }
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-  .resume-aside {
-    border-left: 0;
-  }
-}
 @media (min-width: 1024px) {
   .resume-aside {
+    border-left-width: 1px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 .resume-aside .item {
-  font-size: 0.875rem;
   margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
+
 .resume-aside .item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .resume-aside .item-title {
+  margin-bottom: 0.75rem;
   font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   color: var(--secondary);
-  margin-bottom: 0.75rem;
 }
 
 .resume-skills-list,
@@ -918,25 +874,22 @@ ul.resume-list {
 .resume-awards-list,
 .resume-lang-list,
 .resume-interests-list {
-  list-style: none;
-  padding: 0;
-  color: var(--theme-text-color-alt);
+  margin: 0px;
   display: flex;
+  list-style-type: none;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 0;
+  padding: 0px;
+  color: var(--theme-text-color-alt);
 }
 
 .resume-education-list,
 .resume-awards-list {
-  font-size: 0.875rem;
   gap: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.resume-degree,
-.resume-awards-list .font-bold {
-  font-weight: 700;
-}
 .resume-degree-org,
 .resume-awards-list .text-gray-500 {
   color: var(--gray-600);
@@ -944,26 +897,29 @@ ul.resume-list {
 
 .resume-degree-time {
   font-size: 0.75rem;
+  line-height: 1rem;
   color: var(--gray-400);
 }
 
 .resume-lang-list,
 .resume-interests-list {
   font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .resume-lang-list span {
-  color: var(--gray-400);
   margin-left: 0.25rem;
+  color: var(--gray-400);
 }
 
 .resume-footer-divider {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-top: 2px solid var(--theme-border-color-light);
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
+  border-top-width: 2px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: var(--theme-border-color-light);
 }
 
 .resume-footer {
@@ -971,32 +927,35 @@ ul.resume-list {
 }
 
 .resume-social-list {
-  font-size: 0.75rem;
+  margin: 0px;
   display: flex;
+  list-style-type: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
+  padding: 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   color: var(--gray-600);
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .resume-social-list a {
   display: flex;
   align-items: center;
-  transition: color 0.2s;
   color: inherit;
-  text-decoration: none;
+  text-decoration-line: none;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
 .resume-social-list a:hover {
   color: var(--theme-color-primary);
 }
 .resume-social-list i,
 .resume-social-list svg {
-  width: 1rem;
-  height: 1rem;
   margin-right: 0.5rem;
   display: inline-block;
+  height: 1rem;
+  width: 1rem;
 }
 .resume-social-list span {
   display: none;
@@ -1008,19 +967,19 @@ ul.resume-list {
 }
 
 .footer {
-  text-align: center;
-  color: var(--gray-400);
   margin-top: 2rem;
   margin-bottom: 2rem;
+  text-align: center;
+  color: var(--gray-400);
 }
 .footer .copyright {
   color: var(--gray-600);
 }
 .footer i,
 .footer svg {
-  width: 0.75rem;
-  height: 0.75rem;
   display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
 }
 
 .lucide-heart {
