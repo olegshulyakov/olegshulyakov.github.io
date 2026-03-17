@@ -23,7 +23,7 @@
 
   <body>
     <div class="main-wrapper">
-      <article class="resume-wrapper">
+      <main class="resume-wrapper">
         <!-- Header -->
         <header class="resume-header">
           <div class="resume-title">
@@ -35,19 +35,19 @@
           <div class="resume-contact">
             <ul>
               <li>
-                <i data-lucide="phone"></i>
+                <i data-lucide="phone" aria-hidden="true"></i>
                 <a class="resume-link" href="tel:#">0123 4567 890</a>
               </li>
               <li>
-                <i data-lucide="mail"></i>
+                <i data-lucide="mail" aria-hidden="true"></i>
                 <a class="resume-link" href="mailto:#">simon@yourwebsite.com</a>
               </li>
               <li>
-                <i data-lucide="globe"></i>
+                <i data-lucide="globe" aria-hidden="true"></i>
                 <a class="resume-link" href="#">www.yourwebsite.com</a>
               </li>
               <li>
-                <i data-lucide="map-pin"></i>
+                <i data-lucide="map-pin" aria-hidden="true"></i>
                 <span>New York</span>
               </li>
             </ul>
@@ -59,7 +59,7 @@
         <!-- Intro -->
         <div class="resume-intro-wrapper">
           <div>
-            <img class="resume-profile-image" src="assets/images/resume-profile.png" alt="image" />
+            <img class="resume-profile-image" src="assets/images/resume-profile.png" alt="Profile picture of Simon Doe" />
           </div>
           <div class="resume-intro">
             <p>
@@ -68,6 +68,7 @@
                 class="theme-link"
                 href="https://themes.3rdwavemedia.com/resources/sketch-template/resume-sketch-sketch-resume-template-for-software-developers/"
                 target="_blank"
+                rel="noopener noreferrer"
                 >You can make a PDF version of your resume using our free Sketch template here</a
               >. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing
               elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
@@ -209,8 +210,8 @@
                   <div class="item-heading">
                     <h4 class="item-title">
                       Project Lorem Ipsum
-                      <a href="#" class="project-link"
-                        ><i data-lucide="external-link" class="external-link-icon"></i
+                      <a href="#" class="project-link" aria-label="External link to Project Lorem Ipsum"
+                        ><i data-lucide="external-link" class="external-link-icon" aria-hidden="true"></i
                       ></a>
                     </h4>
                     <span class="item-meta">Open Source</span>
@@ -227,8 +228,8 @@
                   <div class="item-heading">
                     <h4 class="item-title">
                       Project Sed Fringilla
-                      <a href="#" class="project-link"
-                        ><i data-lucide="external-link" class="external-link-icon"></i
+                      <a href="#" class="project-link" aria-label="External link to Project Sed Fringilla"
+                        ><i data-lucide="external-link" class="external-link-icon" aria-hidden="true"></i
                       ></a>
                     </h4>
                     <span class="item-meta">Open Source</span>
@@ -244,8 +245,8 @@
                   <div class="item-heading">
                     <h4 class="item-title">
                       Project Praesent
-                      <a href="#" class="project-link"
-                        ><i data-lucide="external-link" class="external-link-icon"></i
+                      <a href="#" class="project-link" aria-label="External link to Project Praesent"
+                        ><i data-lucide="external-link" class="external-link-icon" aria-hidden="true"></i
                       ></a>
                     </h4>
                     <span class="item-meta">Open Source</span>
@@ -361,32 +362,32 @@
           <ul class="resume-social-list">
             <li>
               <a href="#">
-                <i data-lucide="github" fill="currentColor"></i>
+                <i data-lucide="github" fill="currentColor" aria-hidden="true"></i>
                 <span>github.com/username</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i data-lucide="linkedin" fill="currentColor"></i>
+                <i data-lucide="linkedin" fill="currentColor" aria-hidden="true"></i>
                 <span>linkedin.com/in/username</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i data-lucide="twitter" fill="currentColor"></i>
+                <i data-lucide="twitter" fill="currentColor" aria-hidden="true"></i>
                 <span>@twittername</span>
               </a>
             </li>
           </ul>
         </div>
         <!--//resume-footer-->
-      </article>
+      </main>
 
       <!-- Attribution -->
       <footer class="footer">
         <small class="copyright"
-          >Designed with <i data-lucide="heart" fill="currentColor"></i> by
-          <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a>
+          >Designed with <i data-lucide="heart" fill="currentColor" role="img" aria-label="love"></i> by
+          <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank" rel="noopener noreferrer">Xiaoying Riley</a>
           for developers</small
         >
       </footer>
