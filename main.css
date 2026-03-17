@@ -1,0 +1,522 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*!
+ * Template Name: DevResume - Bootstrap 5 Resume/CV Template for Software Developers
+ * Version: Bootstrap 5 v3.1
+ * Author: Xiaoying Riley
+ * Copyright: 3rd Wave Media Ltd.
+ * Twitter: @3rdwave_themes
+ * Website: http://themes.3rdwavemedia.com/
+*/
+:root {
+  /*************************** Theme Colours****************************/
+  /* Define theme colour scheme */
+  --theme-color-primary: #54b689;
+  --theme-text-color-primary: #292929;
+
+  --theme-text-color-secondary: #4d4d4d; /* lighten 15% */
+  --theme-text-color-light: #8f8f8f; /* lighten 40% */
+  --theme-border-color: #cfcfcf; /* lighten 60% */
+
+  --theme-bg-body: #f3f4f6;
+  --theme-bg-resume: #fff;
+  --theme-border-color-light: #eaeaea;
+  --theme-text-color-alt: #4f4f4f;
+  --theme-color-heart: #fb866a;
+  --theme-link-decoration: rgba(41, 41, 41, 0.3);
+  --theme-link-decoration-hover: rgba(84, 182, 137, 0.8);
+  --theme-resume-border: rgba(0, 0, 0, 0.025);
+  --theme-divider-border: rgba(0, 0, 0, 0.08);
+
+  /*************************** Variables Section. *****************************/
+  /* Create variables to override the default value for variables used in the Bootstrap SCSS files. */
+  --gray-100: #cfcfcf;
+  --gray-200: #c4c4c4;
+  --gray-300: #b8b8b8;
+  --gray-400: #adadad;
+  --gray-500: #a1a1a1;
+  --gray-600: #7a7a7a;
+  --gray-700: #666666;
+  --gray-800: #525252;
+  --gray-900: #292929;
+
+  /* Override BS5 sass color */
+  --primary: var(--theme-color-primary);
+  --secondary: var(--theme-text-color-secondary);
+}
+/*************************** DevResume Styles ****************************/
+
+/*********** Theme Generic **********/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--theme-text-color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--theme-text-color-primary);
+  font-weight: bold;
+}
+
+/* Extracted from index.html */
+body {
+  background-color: var(--theme-bg-body);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-wrapper {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 1024px) {
+  .main-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/*********** Resume **********/
+.resume-wrapper {
+  border: 1px solid var(--theme-resume-border);
+  background-color: var(--theme-bg-resume);
+  padding: 2rem;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--theme-border-color-light);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .resume-header {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .resume-header {
+    gap: 3rem;
+  }
+}
+
+.resume-title {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .resume-title {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.resume-name {
+  font-size: 2.75rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  color: var(--theme-color-primary);
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.resume-tagline {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .resume-tagline {
+    margin-bottom: 0;
+  }
+}
+
+.resume-contact {
+  border-left: 1px solid var(--theme-divider-border);
+  font-size: 0.75rem;
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .resume-contact {
+    border-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .resume-contact {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.resume-contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+.resume-contact li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.resume-contact li:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .resume-contact li {
+    justify-content: flex-start;
+  }
+}
+.resume-contact i,
+.resume-contact svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.75rem;
+  color: var(--secondary);
+}
+
+a.resume-link {
+  color: var(--theme-text-color-secondary);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a.resume-link:hover {
+  color: var(--theme-color-primary);
+}
+
+.resume-intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid var(--theme-border-color-light);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .resume-intro-wrapper {
+    flex-direction: row;
+  }
+}
+
+.resume-profile-image {
+  max-width: 120px;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.resume-intro {
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--theme-text-color-alt);
+  line-height: 1.625;
+}
+@media (min-width: 768px) {
+  .resume-intro {
+    text-align: left;
+  }
+}
+
+a.theme-link {
+  color: var(--theme-text-color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--theme-link-decoration);
+}
+
+a.theme-link:hover {
+  color: var(--theme-color-primary);
+  text-decoration-color: var(--theme-link-decoration-hover);
+}
+
+.resume-body {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .resume-body {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+  }
+}
+
+/* Flattened nested SCSS */
+.resume-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 0;
+}
+@media (min-width: 1024px) {
+  .resume-main {
+    grid-column: span 2;
+    padding-right: 1rem;
+  }
+}
+
+.resume-main .item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resume-main .item-meta {
+  font-size: 0.75rem;
+  color: var(--gray-700);
+  margin-top: 0.25rem;
+}
+@media (min-width: 768px) {
+  .resume-main .item-meta {
+    margin-top: 0;
+  }
+}
+
+.resume-main .item-content {
+  font-size: 0.875rem;
+}
+.resume-main .item-content p {
+  margin-bottom: 0.75rem;
+}
+
+.work-section > div,
+.project-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resume-section-heading {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+  color: var(--theme-color-primary);
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.resume-section-heading::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: var(--theme-color-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.item-heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .item-heading {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+ul.resume-list {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+.project-link {
+  color: var(--gray-400);
+  transition: color 0.2s;
+}
+.project-link:hover {
+  color: var(--theme-color-primary);
+}
+
+.external-link-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.resume-aside {
+  border-left: 1px solid var(--theme-divider-border);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .resume-aside {
+    border-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .resume-aside {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.resume-aside .item {
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+.resume-aside .item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-aside .item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+}
+
+.resume-skills-list,
+.resume-education-list,
+.resume-awards-list,
+.resume-lang-list,
+.resume-interests-list {
+  list-style: none;
+  padding: 0;
+  color: var(--theme-text-color-alt);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.resume-education-list,
+.resume-awards-list {
+  font-size: 0.875rem;
+  gap: 1rem;
+}
+
+.resume-degree,
+.resume-awards-list .font-bold {
+  font-weight: 700;
+}
+.resume-degree-org,
+.resume-awards-list .text-gray-500 {
+  color: var(--gray-600);
+}
+
+.resume-degree-time {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+.resume-lang-list,
+.resume-interests-list {
+  font-size: 0.875rem;
+}
+
+.resume-lang-list span {
+  color: var(--gray-400);
+  margin-left: 0.25rem;
+}
+
+.resume-footer-divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 2px solid var(--theme-border-color-light);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.resume-footer {
+  text-align: center;
+}
+
+.resume-social-list {
+  font-size: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--gray-600);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.resume-social-list a {
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  color: inherit;
+  text-decoration: none;
+}
+.resume-social-list a:hover {
+  color: var(--theme-color-primary);
+}
+.resume-social-list i,
+.resume-social-list svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+.resume-social-list span {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .resume-social-list span {
+    display: inline-block;
+  }
+}
+
+.footer {
+  text-align: center;
+  color: var(--gray-400);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.footer .copyright {
+  color: var(--gray-600);
+}
+.footer i,
+.footer svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  display: inline-block;
+}
+
+.lucide-heart {
+  color: var(--theme-color-heart);
+}
