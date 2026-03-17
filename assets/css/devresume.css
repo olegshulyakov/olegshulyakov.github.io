@@ -678,7 +678,7 @@ a.resume-link:hover {
   margin-right: auto;
   max-width: 120px;
   flex-shrink: 0;
-  border-radius: 0.25rem;
+  border-radius: 9999px;
   -o-object-fit: cover;
      object-fit: cover;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);

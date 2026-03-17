@@ -111,7 +111,7 @@ a.resume-link {
 }
 
 .resume-profile-image {
-  @apply max-w-[120px] rounded object-cover shadow mx-auto shrink-0;
+  @apply max-w-[120px] rounded-full object-cover shadow mx-auto shrink-0;
 }
 
 .resume-intro {
