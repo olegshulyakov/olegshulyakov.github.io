@@ -68,7 +68,7 @@ h6 {
 
 /*********** Resume **********/
 .resume-wrapper {
-  @apply border border-[var(--theme-resume-border)] bg-[var(--theme-bg-resume)] p-8 shadow-md mb-12;
+  @apply border border-[var(--theme-resume-border)] bg-[var(--theme-bg-resume)] p-8 lg:p-12 shadow-md mb-12;
 }
 
 .resume-header {
