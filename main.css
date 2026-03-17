@@ -72,11 +72,11 @@ h6 {
 }
 
 .resume-header {
-  @apply flex flex-col items-center border-b border-[var(--theme-border-color-light)] pb-6 mb-6 md:grid md:grid-cols-3 lg:gap-12;
+  @apply flex flex-col items-center border-b border-[var(--theme-border-color-light)] pb-6 mb-6 md:grid md:grid-cols-3 lg:grid-cols-4 lg:gap-12;
 }
 
 .resume-title {
-  @apply col-span-2 text-center mb-6 md:text-left md:mb-0;
+  @apply md:col-span-2 lg:col-span-3 text-center mb-6 md:text-left md:mb-0;
 }
 
 .resume-name {
@@ -123,12 +123,12 @@ a.theme-link {
 }
 
 .resume-body {
-  @apply grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12;
+  @apply grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-12;
 }
 
 /* Flattened nested SCSS */
 .resume-main {
-  @apply flex flex-col gap-8 pr-0 lg:col-span-2 lg:pr-4;
+  @apply flex flex-col gap-8 pr-0 lg:col-span-3 lg:pr-4;
 }
 
 .resume-main .item-title {

@@ -558,20 +558,27 @@ h6 {
 
 @media (min-width: 1024px) {
   .resume-header {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 3rem;
   }
 }
 
 .resume-title {
-  grid-column: span 2 / span 2;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .resume-title {
+    grid-column: span 2 / span 2;
     margin-bottom: 0px;
     text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .resume-title {
+    grid-column: span 3 / span 3;
   }
 }
 
@@ -724,7 +731,7 @@ a.theme-link:hover {
 
 @media (min-width: 1024px) {
   .resume-body {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 3rem;
   }
 }
@@ -738,7 +745,7 @@ a.theme-link:hover {
 }
 @media (min-width: 1024px) {
   .resume-main {
-    grid-column: span 2 / span 2;
+    grid-column: span 3 / span 3;
     padding-right: 1rem;
   }
 }
