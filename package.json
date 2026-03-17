@@ -1,7 +1,7 @@
 {
   "name": "devresume-theme",
   "version": "1.0.0",
-  "description": "DevResume - Bootstrap 5 Resume/CV Theme for Software Developers",
+  "description": "DevResume - TailwindCSS Resume/CV Template for Software Developers",
   "scripts": {
     "start": "serve",
     "build:css": "postcss main.css -o assets/css/devresume.css",
