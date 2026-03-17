@@ -43,33 +43,33 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/devresume.css" />
   </head>
 
-  <body class="bg-gray-100 text-body font-sans antialiased py-8">
-    <div class="max-w-7xl mx-auto px-4 lg:px-8">
-      <article class="resume-wrapper bg-white p-8 shadow-lg mb-12">
+  <body>
+    <div class="main-wrapper">
+      <article class="resume-wrapper">
         <!-- Header -->
-        <header class="flex flex-col md:flex-row items-center md:justify-between border-b border-divider pb-6 mb-6">
-          <div class="resume-title text-center md:text-left mb-6 md:mb-0">
-            <h2 class="resume-name mb-0 uppercase">Simon Doe</h2>
-            <div class="resume-tagline mb-3 md:mb-0">Senior Software Engineer</div>
+        <header class="resume-header">
+          <div class="resume-title">
+            <h2 class="resume-name">Simon Doe</h2>
+            <div class="resume-tagline">Senior Software Engineer</div>
           </div>
           <!--//resume-title-->
 
-          <div class="resume-contact w-full md:w-auto px-3">
-            <ul class="space-y-2 text-sm">
-              <li class="flex items-center justify-center md:justify-start">
-                <i data-lucide="phone" class="w-4 h-4 mr-3 text-secondary"></i>
-                <a class="resume-link transition-colors duration-200" href="tel:#">0123 4567 890</a>
+          <div class="resume-contact">
+            <ul>
+              <li>
+                <i data-lucide="phone"></i>
+                <a class="resume-link" href="tel:#">0123 4567 890</a>
               </li>
-              <li class="flex items-center justify-center md:justify-start">
-                <i data-lucide="mail" class="w-4 h-4 mr-3 text-secondary"></i>
-                <a class="resume-link transition-colors duration-200" href="mailto:#">simon@yourwebsite.com</a>
+              <li>
+                <i data-lucide="mail"></i>
+                <a class="resume-link" href="mailto:#">simon@yourwebsite.com</a>
               </li>
-              <li class="flex items-center justify-center md:justify-start">
-                <i data-lucide="globe" class="w-4 h-4 mr-3 text-secondary"></i>
-                <a class="resume-link transition-colors duration-200" href="#">www.yourwebsite.com</a>
+              <li>
+                <i data-lucide="globe"></i>
+                <a class="resume-link" href="#">www.yourwebsite.com</a>
               </li>
-              <li class="flex items-center justify-center md:justify-start">
-                <i data-lucide="map-pin" class="w-4 h-4 mr-3 text-secondary"></i>
+              <li>
+                <i data-lucide="map-pin"></i>
                 <span>New York</span>
               </li>
             </ul>
@@ -79,15 +79,11 @@
         <!--//resume-header-->
 
         <!-- Intro -->
-        <div class="flex flex-col md:flex-row items-center gap-8 border-b border-divider pb-6 mb-6">
-          <div class="shrink-0">
-            <img
-              class="resume-profile-image rounded object-cover shadow-sm mx-auto"
-              src="assets/images/resume-profile.png"
-              alt="image"
-            />
+        <div class="resume-intro-wrapper">
+          <div>
+            <img class="resume-profile-image" src="assets/images/resume-profile.png" alt="image" />
           </div>
-          <div class="text-center md:text-left text-gray-600 leading-relaxed text-sm">
+          <div class="resume-intro">
             <p>
               Summarise your career here.
               <a
@@ -107,22 +103,22 @@
         <!--//resume-intro-->
 
         <!-- Body -->
-        <div class="resume-body grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div class="resume-body">
           <!-- Main Content (Left, 2 columns wide on LG) -->
-          <div class="resume-main lg:col-span-2 space-y-8 pr-0 lg:pr-4">
+          <div class="resume-main">
             <!-- Work Experiences -->
             <section class="work-section">
-              <h3 class="resume-section-heading uppercase mb-5 flex items-center">Work Experiences</h3>
+              <h3 class="resume-section-heading">Work Experiences</h3>
 
-              <div class="space-y-4">
+              <div>
                 <!-- Item 1 -->
-                <div class="item relative">
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary">Senior Software Engineer</h4>
-                    <div class="item-meta text-gray-500 mt-1 md:mt-0">Google | 2023 - Present</div>
+                <div class="item">
+                  <div class="item-heading">
+                    <h4 class="item-title">Senior Software Engineer</h4>
+                    <div class="item-meta">Google | 2023 - Present</div>
                   </div>
-                  <div class="item-content text-gray-600">
-                    <p class="mb-3">
+                  <div class="item-content">
+                    <p>
                       Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                       nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
@@ -137,13 +133,13 @@
                 <!--//item-->
 
                 <!-- Item 2 -->
-                <div class="item relative">
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary">Lead Software Developer</h4>
-                    <div class="item-meta text-gray-500 mt-1 md:mt-0">Apple | 2022 - 2023</div>
+                <div class="item">
+                  <div class="item-heading">
+                    <h4 class="item-title">Lead Software Developer</h4>
+                    <div class="item-meta">Apple | 2022 - 2023</div>
                   </div>
-                  <div class="item-content text-gray-600">
-                    <p class="mb-3">
+                  <div class="item-content">
+                    <p>
                       Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                       nascetur ridiculus mus.
@@ -157,13 +153,13 @@
                 <!--//item-->
 
                 <!-- Item 3 -->
-                <div class="item relative">
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary">Senior Software Developer</h4>
-                    <div class="item-meta text-gray-500 mt-1 md:mt-0">Dropbox | 2020 - 2022</div>
+                <div class="item">
+                  <div class="item-heading">
+                    <h4 class="item-title">Senior Software Developer</h4>
+                    <div class="item-meta">Dropbox | 2020 - 2022</div>
                   </div>
-                  <div class="item-content text-gray-600">
-                    <p class="mb-3">
+                  <div class="item-content">
+                    <p>
                       Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                       nascetur ridiculus mus.
@@ -173,13 +169,13 @@
                 <!--//item-->
 
                 <!-- Item 4 -->
-                <div class="item relative">
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary">Senior Developer</h4>
-                    <div class="item-meta text-gray-500 mt-1 md:mt-0">Uber | 2019 - 2020</div>
+                <div class="item">
+                  <div class="item-heading">
+                    <h4 class="item-title">Senior Developer</h4>
+                    <div class="item-meta">Uber | 2019 - 2020</div>
                   </div>
-                  <div class="item-content text-gray-600">
-                    <p class="mb-3">
+                  <div class="item-content">
+                    <p>
                       Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
                     </p>
@@ -188,13 +184,13 @@
                 <!--//item-->
 
                 <!-- Item 5 -->
-                <div class="item relative">
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary">Backend Developer</h4>
-                    <div class="item-meta text-gray-500 mt-1 md:mt-0">Amazon | 2018 - 2019</div>
+                <div class="item">
+                  <div class="item-heading">
+                    <h4 class="item-title">Backend Developer</h4>
+                    <div class="item-meta">Amazon | 2018 - 2019</div>
                   </div>
-                  <div class="item-content text-gray-600">
-                    <p class="mb-3">
+                  <div class="item-content">
+                    <p>
                       Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                       nascetur ridiculus mus.
@@ -204,13 +200,13 @@
                 <!--//item-->
 
                 <!-- Item 6 -->
-                <div class="item relative">
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary">Frontend Developer</h4>
-                    <div class="item-meta text-gray-500 mt-1 md:mt-0">Startup | 2017 - 2018</div>
+                <div class="item">
+                  <div class="item-heading">
+                    <h4 class="item-title">Frontend Developer</h4>
+                    <div class="item-meta">Startup | 2017 - 2018</div>
                   </div>
-                  <div class="item-content text-gray-600">
-                    <p class="mb-3">
+                  <div class="item-content">
+                    <p>
                       Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
                     </p>
@@ -223,39 +219,39 @@
 
             <!-- Projects -->
             <section class="project-section">
-              <h3 class="resume-section-heading uppercase mb-5 flex items-center">Projects</h3>
+              <h3 class="resume-section-heading">Projects</h3>
 
-              <div class="space-y-4">
+              <div>
                 <!-- Project 1 -->
                 <div>
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary flex items-center gap-2">
+                  <div class="item-heading">
+                    <h4 class="item-title">
                       Project Lorem Ipsum
-                      <a href="#" class="text-gray-400 hover:text-primary transition-colors"
-                        ><i data-lucide="external-link" class="w-4 h-4"></i
+                      <a href="#" class="project-link"
+                        ><i data-lucide="external-link" class="external-link-icon"></i
                       ></a>
                     </h4>
-                    <span class="item-meta text-gray-500 mt-1 md:mt-0">Open Source</span>
+                    <span class="item-meta">Open Source</span>
                   </div>
-                  <p class="item-content text-gray-600">
+                  <p class="item-content">
                     You can use this section for your side projects. You can
-                    <a href="#" class="underline">provide a project link here</a> as well. Lorem ipsum dolor sit amet,
+                    <a href="#" class="theme-link">provide a project link here</a> as well. Lorem ipsum dolor sit amet,
                     consectetuer adipiscing elit.
                   </p>
                 </div>
 
                 <!-- Project 2 -->
                 <div>
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary flex items-center gap-2">
+                  <div class="item-heading">
+                    <h4 class="item-title">
                       Project Sed Fringilla
-                      <a href="#" class="text-gray-400 hover:text-primary transition-colors"
-                        ><i data-lucide="external-link" class="w-4 h-4"></i
+                      <a href="#" class="project-link"
+                        ><i data-lucide="external-link" class="external-link-icon"></i
                       ></a>
                     </h4>
-                    <span class="item-meta text-gray-500 mt-1 md:mt-0">Open Source</span>
+                    <span class="item-meta">Open Source</span>
                   </div>
-                  <p class="item-content text-gray-600">
+                  <p class="item-content">
                     You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean
                     vulputate eleifend tellus.
                   </p>
@@ -263,16 +259,16 @@
 
                 <!-- Project 3 -->
                 <div>
-                  <div class="item-heading flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h4 class="item-title text-secondary flex items-center gap-2">
+                  <div class="item-heading">
+                    <h4 class="item-title">
                       Project Praesent
-                      <a href="#" class="text-gray-400 hover:text-primary transition-colors"
-                        ><i data-lucide="external-link" class="w-4 h-4"></i
+                      <a href="#" class="project-link"
+                        ><i data-lucide="external-link" class="external-link-icon"></i
                       ></a>
                     </h4>
-                    <span class="item-meta text-gray-500 mt-1 md:mt-0">Open Source</span>
+                    <span class="item-meta">Open Source</span>
                   </div>
-                  <p class="item-content text-gray-600">
+                  <p class="item-content">
                     You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean
                     vulputate eleifend tellus.
                   </p>
@@ -285,31 +281,31 @@
           <!--//resume-main-->
 
           <!-- Aside (Right, 1 column wide on LG) -->
-          <aside class="resume-aside space-y-8 lg:px-6">
+          <aside class="resume-aside">
             <!-- Skills -->
             <section class="skills-section">
-              <h3 class="resume-section-heading uppercase mb-5 flex items-center">Skills</h3>
-              <div class="item mb-5">
-                <h4 class="item-title text-secondary mb-3">Technical</h4>
-                <ul class="list-none resume-skills-list text-gray-600 space-y-2">
-                  <li class="flex items-start">JavaScript/Angular/React/Vue</li>
-                  <li class="flex items-start">Python/Ruby/PHP</li>
-                  <li class="flex items-start">Node.js/ASP.NET</li>
-                  <li class="flex items-start">PostgreSQL/MySQL</li>
-                  <li class="flex items-start">Object-oriented design</li>
-                  <li class="flex items-start">Design and implement database structures</li>
-                  <li class="flex items-start">Lead and deliver complex software systems</li>
+              <h3 class="resume-section-heading">Skills</h3>
+              <div class="item">
+                <h4 class="item-title">Technical</h4>
+                <ul class="resume-skills-list">
+                  <li>JavaScript/Angular/React/Vue</li>
+                  <li>Python/Ruby/PHP</li>
+                  <li>Node.js/ASP.NET</li>
+                  <li>PostgreSQL/MySQL</li>
+                  <li>Object-oriented design</li>
+                  <li>Design and implement database structures</li>
+                  <li>Lead and deliver complex software systems</li>
                 </ul>
               </div>
               <!--//item-->
 
               <div class="item">
-                <h4 class="item-title text-secondary mb-3">Professional</h4>
-                <ul class="list-none resume-skills-list text-gray-600 space-y-2">
-                  <li class="flex items-start">Effective communication</li>
-                  <li class="flex items-start">Team player</li>
-                  <li class="flex items-start">Strong problem solver</li>
-                  <li class="flex items-start">Good time management</li>
+                <h4 class="item-title">Professional</h4>
+                <ul class="resume-skills-list">
+                  <li>Effective communication</li>
+                  <li>Team player</li>
+                  <li>Strong problem solver</li>
+                  <li>Good time management</li>
                 </ul>
               </div>
               <!--//item-->
@@ -318,17 +314,17 @@
 
             <!-- Education -->
             <section>
-              <h3 class="resume-section-heading uppercase mb-5 flex items-center">Education</h3>
-              <ul class="list-none resume-education-list space-y-4">
+              <h3 class="resume-section-heading">Education</h3>
+              <ul class="resume-education-list">
                 <li>
-                  <div class="resume-degree font-bold">MSc in Computer Science</div>
-                  <div class="resume-degree-org text-gray-500">University College London</div>
-                  <div class="resume-degree-time text-gray-400">2012 - 2016</div>
+                  <div class="resume-degree">MSc in Computer Science</div>
+                  <div class="resume-degree-org">University College London</div>
+                  <div class="resume-degree-time">2012 - 2016</div>
                 </li>
                 <li>
-                  <div class="resume-degree font-bold">BSc Maths and Physics</div>
-                  <div class="resume-degree-org text-gray-500">Imperial College London</div>
-                  <div class="resume-degree-time text-gray-400">2016 - 2017</div>
+                  <div class="resume-degree">BSc Maths and Physics</div>
+                  <div class="resume-degree-org">Imperial College London</div>
+                  <div class="resume-degree-time">2016 - 2017</div>
                 </li>
               </ul>
             </section>
@@ -336,8 +332,8 @@
 
             <!-- Awards -->
             <section class="education-section">
-              <h3 class="resume-section-heading uppercase mb-5 flex items-center">Awards</h3>
-              <ul class="list-none resume-awards-list space-y-4">
+              <h3 class="resume-section-heading">Awards</h3>
+              <ul class="resume-awards-list">
                 <li>
                   <div class="font-bold">Award Lorem Ipsum</div>
                   <div class="text-gray-500">Microsoft lorem ipsum (2023)</div>
@@ -352,17 +348,17 @@
 
             <!-- Languages -->
             <section>
-              <h3 class="resume-section-heading uppercase mb-5 flex items-center">Languages</h3>
-              <ul class="list-none resume-lang-list space-y-2">
-                <li>English <span class="text-gray-400 ml-1">(Native)</span></li>
-                <li>Spanish <span class="text-gray-400 ml-1">(Professional)</span></li>
+              <h3 class="resume-section-heading">Languages</h3>
+              <ul class="resume-lang-list">
+                <li>English <span>(Native)</span></li>
+                <li>Spanish <span>(Professional)</span></li>
               </ul>
             </section>
 
             <!-- Interests -->
             <section>
-              <h3 class="resume-section-heading uppercase mb-5 flex items-center">Interests</h3>
-              <ul class="text-sm text-gray-600 space-y-2">
+              <h3 class="resume-section-heading">Interests</h3>
+              <ul class="resume-interests-list">
                 <li>Climbing</li>
                 <li>Snowboarding</li>
                 <li>Photography</li>
@@ -376,27 +372,27 @@
         <!--//resume-body-->
 
         <!-- Footer Divider -->
-        <hr class="my-8 border-divider border-t-2" />
+        <hr class="resume-footer-divider" />
 
         <!-- Socials -->
-        <div class="resume-footer text-center">
-          <ul class="resume-social-list flex flex-wrap justify-center gap-6 text-gray-500">
+        <div class="resume-footer">
+          <ul class="resume-social-list">
             <li>
-              <a class="flex items-center hover:text-primary transition-colors" href="#">
-                <i data-lucide="github" class="w-4 h-4 mr-2 inline" fill="currentColor"></i>
-                <span class="hidden lg:inline-block">github.com/username</span>
+              <a href="#">
+                <i data-lucide="github" fill="currentColor"></i>
+                <span>github.com/username</span>
               </a>
             </li>
             <li>
-              <a class="flex items-center hover:text-primary transition-colors" href="#">
-                <i data-lucide="linkedin" class="w-4 h-4 mr-2 inline" fill="currentColor"></i>
-                <span class="hidden lg:inline-block">linkedin.com/in/username</span>
+              <a href="#">
+                <i data-lucide="linkedin" fill="currentColor"></i>
+                <span>linkedin.com/in/username</span>
               </a>
             </li>
             <li>
-              <a class="flex items-center hover:text-primary transition-colors" href="#">
-                <i data-lucide="twitter" class="w-4 h-4 mr-2 inline" fill="currentColor"></i>
-                <span class="hidden lg:inline-block">@twittername</span>
+              <a href="#">
+                <i data-lucide="twitter" fill="currentColor"></i>
+                <span>@twittername</span>
               </a>
             </li>
           </ul>
@@ -405,9 +401,9 @@
       </article>
 
       <!-- Attribution -->
-      <footer class="footer text-center text-gray-400">
-        <small class="copyright text-gray-500"
-          >Designed with <i data-lucide="heart" class="w-3 h-3 inline" fill="currentColor"></i> by
+      <footer class="footer">
+        <small class="copyright"
+          >Designed with <i data-lucide="heart" fill="currentColor"></i> by
           <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a>
           for developers</small
         >
