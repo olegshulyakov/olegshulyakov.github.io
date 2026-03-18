@@ -29,22 +29,6 @@
   --theme-link-decoration-hover: rgba(84, 182, 137, 0.8);
   --theme-resume-border: rgba(0, 0, 0, 0.025);
   --theme-divider-border: rgba(0, 0, 0, 0.08);
-
-  /*************************** Variables Section. *****************************/
-  /* Create variables to override the default value for variables used in the Bootstrap SCSS files. */
-  --gray-100: #cfcfcf;
-  --gray-200: #c4c4c4;
-  --gray-300: #b8b8b8;
-  --gray-400: #adadad;
-  --gray-500: #a1a1a1;
-  --gray-600: #7a7a7a;
-  --gray-700: #666666;
-  --gray-800: #525252;
-  --gray-900: #292929;
-
-  /* Override BS5 sass color */
-  --primary: var(--theme-color-primary);
-  --secondary: var(--theme-text-color-secondary);
 }
 /*************************** DevResume Styles ****************************/
 
@@ -99,7 +83,7 @@ h6 {
 }
 .resume-contact i,
 .resume-contact svg {
-  @apply w-4 h-4 mr-3 text-[var(--secondary)];
+  @apply w-4 h-4 mr-3 text-[var(--theme-text-color-secondary)];
 }
 
 a.resume-link {
@@ -132,11 +116,11 @@ a.theme-link {
 }
 
 .resume-main .item-title {
-  @apply text-base font-bold text-[var(--secondary)] flex items-center gap-2;
+  @apply text-base font-bold text-[var(--theme-text-color-secondary)] flex items-center gap-2;
 }
 
 .resume-main .item-meta {
-  @apply text-xs text-[var(--gray-700)] mt-1 md:mt-0;
+  @apply text-xs text-gray-600 mt-1 md:mt-0;
 }
 
 .resume-main .item-content {
@@ -167,7 +151,7 @@ ul.resume-list {
   @apply pl-7 list-disc;
 }
 .project-link {
-  @apply text-[var(--gray-400)] transition-colors duration-200 hover:text-[var(--theme-color-primary)];
+  @apply text-gray-400 transition-colors duration-200 hover:text-[var(--theme-color-primary)];
 }
 
 .external-link-icon {
@@ -183,7 +167,7 @@ ul.resume-list {
 }
 
 .resume-aside .item-title {
-  @apply text-base font-bold text-[var(--secondary)] mb-3;
+  @apply text-base font-bold text-[var(--theme-text-color-secondary)] mb-3;
 }
 
 .resume-skills-list,
@@ -199,13 +183,8 @@ ul.resume-list {
   @apply text-sm gap-4;
 }
 
-.resume-degree-org,
-.resume-awards-list .text-gray-500 {
-  @apply text-[var(--gray-600)];
-}
-
 .resume-degree-time {
-  @apply text-xs text-[var(--gray-400)];
+  @apply text-xs text-gray-500;
 }
 
 .resume-lang-list,
@@ -214,7 +193,7 @@ ul.resume-list {
 }
 
 .resume-lang-list span {
-  @apply text-[var(--gray-400)] ml-1;
+  @apply text-gray-400 ml-1;
 }
 
 .resume-footer-divider {
@@ -226,7 +205,7 @@ ul.resume-list {
 }
 
 .resume-social-list {
-  @apply text-xs flex flex-wrap justify-center gap-6 text-[var(--gray-600)] list-none p-0 m-0;
+  @apply text-xs flex flex-wrap justify-center gap-6 text-gray-500 list-none p-0 m-0;
 }
 .resume-social-list a {
   @apply flex items-center transition-colors duration-200 text-inherit no-underline hover:text-[var(--theme-color-primary)];
@@ -240,10 +219,10 @@ ul.resume-list {
 }
 
 .footer {
-  @apply text-center text-[var(--gray-400)];
+  @apply text-center text-gray-500;
 }
 .footer .copyright {
-  @apply text-[var(--gray-600)];
+  @apply text-gray-500;
 }
 .footer i,
 .footer svg {
