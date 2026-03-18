@@ -557,7 +557,7 @@ h6 {
 @media (min-width: 1024px) {
   .resume-header {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 3rem;
+    gap: 1rem;
   }
 }
 
@@ -614,14 +614,15 @@ h6 {
 
 @media (min-width: 768px) {
   .resume-contact {
+    grid-column: span 1 / span 1;
     border-left-width: 1px;
   }
 }
 
 @media (min-width: 1024px) {
   .resume-contact {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    grid-column: span 1 / span 1;
+    padding-left: 1rem;
   }
 }
 
@@ -730,7 +731,7 @@ a.theme-link:hover {
 @media (min-width: 1024px) {
   .resume-body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 3rem;
+    gap: 1rem;
   }
 }
 
@@ -744,7 +745,6 @@ a.theme-link:hover {
 @media (min-width: 1024px) {
   .resume-main {
     grid-column: span 3 / span 3;
-    padding-right: 1rem;
   }
 }
 
@@ -855,9 +855,10 @@ ul.resume-list {
 
 @media (min-width: 1024px) {
   .resume-aside {
+    grid-column: span 1 / span 1;
     border-left-width: 1px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
