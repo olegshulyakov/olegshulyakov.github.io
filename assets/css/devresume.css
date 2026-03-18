@@ -906,6 +906,14 @@ ul.resume-list {
   color: var(--theme-text-muted);
 }
 
+.resume-award {
+  font-weight: 700;
+}
+
+.resume-award-name {
+  color: var(--theme-text-muted);
+}
+
 .resume-lang-list,
 .resume-interests-list {
   font-size: 0.875rem;

@@ -208,6 +208,14 @@ ul.resume-list {
   @apply text-xs text-[var(--theme-text-muted)];
 }
 
+.resume-award {
+  @apply font-bold;
+}
+
+.resume-award-name {
+  @apply text-[var(--theme-text-muted)];
+}
+
 .resume-lang-list,
 .resume-interests-list {
   @apply text-sm;
