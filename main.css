@@ -15,15 +15,13 @@
   /* Define theme colour scheme */
   --theme-color-primary: #54b689;
   --theme-text-color-primary: #292929;
-
-  --theme-text-color-secondary: #4d4d4d; /* lighten 15% */
-  --theme-text-color-light: #8f8f8f; /* lighten 40% */
-  --theme-border-color: #cfcfcf; /* lighten 60% */
+  --theme-text-color-secondary: #4d4d4d;
+  --theme-text-color-alt: #4f4f4f;
 
   --theme-bg-body: #f3f4f6;
   --theme-bg-resume: #fff;
+  --theme-border-color: #cfcfcf;
   --theme-border-color-light: #eaeaea;
-  --theme-text-color-alt: #4f4f4f;
   --theme-color-heart: #fb866a;
   --theme-link-decoration: rgba(41, 41, 41, 0.3);
   --theme-link-decoration-hover: rgba(84, 182, 137, 0.8);
