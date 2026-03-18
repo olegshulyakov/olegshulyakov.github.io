@@ -440,13 +440,6 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
-.font-bold {
-  font-weight: 700;
-}
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
-}
 
 :root {
   /*************************** Theme Colours****************************/
@@ -455,6 +448,8 @@ video {
   --theme-text-color-primary: #292929;
   --theme-text-color-secondary: #4d4d4d;
   --theme-text-color-alt: #4f4f4f;
+  --theme-text-muted: #4b5563;
+  --theme-text-faint: #9ca3af;
 
   --theme-bg-body: #f3f4f6;
   --theme-bg-resume: #fff;
@@ -465,6 +460,27 @@ video {
   --theme-link-decoration-hover: rgba(84, 182, 137, 0.8);
   --theme-resume-border: rgba(0, 0, 0, 0.025);
   --theme-divider-border: rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color-primary: #6fd5a6;
+    --theme-text-color-primary: #e6e6e6;
+    --theme-text-color-secondary: #c9c9c9;
+    --theme-text-color-alt: #b7b7b7;
+    --theme-text-muted: #a1a1aa;
+    --theme-text-faint: #7f8894;
+
+    --theme-bg-body: #0f1115;
+    --theme-bg-resume: #151a21;
+    --theme-border-color: #2a2f36;
+    --theme-border-color-light: #22272e;
+    --theme-color-heart: #fb866a;
+    --theme-link-decoration: rgba(230, 230, 230, 0.35);
+    --theme-link-decoration-hover: rgba(111, 213, 166, 0.9);
+    --theme-resume-border: rgba(255, 255, 255, 0.06);
+    --theme-divider-border: rgba(255, 255, 255, 0.08);
+  }
 }
 /*************************** DevResume Styles ****************************/
 
@@ -746,8 +762,7 @@ a.theme-link:hover {
   margin-top: 0.25rem;
   font-size: 0.75rem;
   line-height: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+  color: var(--theme-text-muted);
 }
 
 @media (min-width: 768px) {
@@ -816,8 +831,7 @@ ul.resume-list {
   padding-left: 1.75rem;
 }
 .project-link {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+  color: var(--theme-text-faint);
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -889,8 +903,7 @@ ul.resume-list {
 .resume-degree-time {
   font-size: 0.75rem;
   line-height: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+  color: var(--theme-text-muted);
 }
 
 .resume-lang-list,
@@ -901,8 +914,7 @@ ul.resume-list {
 
 .resume-lang-list span {
   margin-left: 0.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+  color: var(--theme-text-faint);
 }
 
 .resume-footer-divider {
@@ -929,8 +941,7 @@ ul.resume-list {
   padding: 0px;
   font-size: 0.75rem;
   line-height: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+  color: var(--theme-text-muted);
 }
 .resume-social-list a {
   display: flex;
@@ -962,12 +973,10 @@ ul.resume-list {
 
 .footer {
   text-align: center;
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+  color: var(--theme-text-muted);
 }
 .footer .copyright {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+  color: var(--theme-text-muted);
 }
 .footer i,
 .footer svg {

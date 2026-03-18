@@ -37,6 +37,7 @@ If you'd like to **use the template without the attribution link**, you can [buy
 - HTML5 + CSS3
 - Built with TailwindCSS
 - **PostCSS** source files included
+- Light/dark mode via `prefers-color-scheme`
 - Lucide icons
 - Compatible with all modern browsers
 

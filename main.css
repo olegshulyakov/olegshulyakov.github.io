@@ -17,6 +17,8 @@
   --theme-text-color-primary: #292929;
   --theme-text-color-secondary: #4d4d4d;
   --theme-text-color-alt: #4f4f4f;
+  --theme-text-muted: #4b5563;
+  --theme-text-faint: #9ca3af;
 
   --theme-bg-body: #f3f4f6;
   --theme-bg-resume: #fff;
@@ -27,6 +29,27 @@
   --theme-link-decoration-hover: rgba(84, 182, 137, 0.8);
   --theme-resume-border: rgba(0, 0, 0, 0.025);
   --theme-divider-border: rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color-primary: #6fd5a6;
+    --theme-text-color-primary: #e6e6e6;
+    --theme-text-color-secondary: #c9c9c9;
+    --theme-text-color-alt: #b7b7b7;
+    --theme-text-muted: #a1a1aa;
+    --theme-text-faint: #7f8894;
+
+    --theme-bg-body: #0f1115;
+    --theme-bg-resume: #151a21;
+    --theme-border-color: #2a2f36;
+    --theme-border-color-light: #22272e;
+    --theme-color-heart: #fb866a;
+    --theme-link-decoration: rgba(230, 230, 230, 0.35);
+    --theme-link-decoration-hover: rgba(111, 213, 166, 0.9);
+    --theme-resume-border: rgba(255, 255, 255, 0.06);
+    --theme-divider-border: rgba(255, 255, 255, 0.08);
+  }
 }
 /*************************** DevResume Styles ****************************/
 
@@ -118,7 +141,7 @@ a.theme-link {
 }
 
 .resume-main .item-meta {
-  @apply text-xs text-gray-600 mt-1 md:mt-0;
+  @apply text-xs text-[var(--theme-text-muted)] mt-1 md:mt-0;
 }
 
 .resume-main .item-content {
@@ -149,7 +172,7 @@ ul.resume-list {
   @apply pl-7 list-disc;
 }
 .project-link {
-  @apply text-gray-400 transition-colors duration-200 hover:text-[var(--theme-color-primary)];
+  @apply text-[var(--theme-text-faint)] transition-colors duration-200 hover:text-[var(--theme-color-primary)];
 }
 
 .external-link-icon {
@@ -182,7 +205,7 @@ ul.resume-list {
 }
 
 .resume-degree-time {
-  @apply text-xs text-gray-500;
+  @apply text-xs text-[var(--theme-text-muted)];
 }
 
 .resume-lang-list,
@@ -191,7 +214,7 @@ ul.resume-list {
 }
 
 .resume-lang-list span {
-  @apply text-gray-400 ml-1;
+  @apply text-[var(--theme-text-faint)] ml-1;
 }
 
 .resume-footer-divider {
@@ -203,7 +226,7 @@ ul.resume-list {
 }
 
 .resume-social-list {
-  @apply text-xs flex flex-wrap justify-center gap-6 text-gray-500 list-none p-0 m-0;
+  @apply text-xs flex flex-wrap justify-center gap-6 text-[var(--theme-text-muted)] list-none p-0 m-0;
 }
 .resume-social-list a {
   @apply flex items-center transition-colors duration-200 text-inherit no-underline hover:text-[var(--theme-color-primary)];
@@ -217,10 +240,10 @@ ul.resume-list {
 }
 
 .footer {
-  @apply text-center text-gray-500;
+  @apply text-center text-[var(--theme-text-muted)];
 }
 .footer .copyright {
-  @apply text-gray-500;
+  @apply text-[var(--theme-text-muted)];
 }
 .footer i,
 .footer svg {
